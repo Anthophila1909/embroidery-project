@@ -40,7 +40,7 @@ header h2 {
 }
 
 header h3,
-.secondary h3 {
+.section h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -68,7 +68,7 @@ header a {
 }
 
 .primary h3,
-.secondary h3 {
+.section h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -76,14 +76,14 @@ header a {
 }
 
 .primary h2,
-.secondary h2 {
+.section h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
 }
 
 .primary p,
-.secondary p {
+.section p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -100,13 +100,13 @@ header a {
   max-height: 600px;
 }
 
-.secondary {
+.section {
   padding: 100px;
   background-color: var(--secondary-color);
 }
 
-.secondary h2,
-.secondary h3 {
+.section h2,
+.section h3 {
   text-align: center;
 }
 
@@ -133,9 +133,22 @@ header a {
 }
 
 .card img {
-  max-width: 300px;
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.tutorials {
+  background-color: white;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 20px;
+}
+
+.tutorial {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 footer {
@@ -187,18 +200,18 @@ footer .more-links {
     margin: 0;
   }
 
-  .secondary {
+  .section {
     margin: 0;
     padding: 40px 0;
   }
 
   .primary h2,
-  .secondary h2 {
+  .section h2 {
     font-size: 30px;
   }
 
   .primary p,
-  .secondary p {
+  .section p {
     font-size: 15px;
   }
 
@@ -211,17 +224,14 @@ footer .more-links {
     max-height: 400px;
   }
 
-  .cards {
+  .cards,
+  .videos {
     grid-template-columns: 1fr;
   }
 
   .card {
     text-align: center;
     padding: 25px;
-  }
-
-  .card img {
-    max-width: 280px;
   }
 
   .card h2 {
